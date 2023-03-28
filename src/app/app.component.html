@@ -1,0 +1,15 @@
+<header class="main">
+   <h4 class="head">1 Year Graph </h4>
+</header>
+
+
+
+
+
+
+<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis'[primaryYAxis]='primaryYAxis' [title]='title' [crosshair]='crosshair' [tooltip]='tooltip'>
+  <e-series-collection>
+      <e-series [dataSource]='chartData' type='Line' xName='x' yName='y2' name='Thomas' width=2 [marker]='marker'></e-series>
+      <e-series [dataSource]='chartData' type='Line' xName='x' yName='y3' name='Mark' width=2 [marker]='marker'></e-series>
+  </e-series-collection>
+</ejs-chart>
